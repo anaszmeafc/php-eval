@@ -5,7 +5,7 @@
 > Répondez directement dans ce fichier en remplaçant les lignes `_Votre réponse ici_`.  
 > Écrivez votre nom et prénom ci-dessous.
 
-**Nom et prénom :** _______________________
+**Nom et prénom :** Essebbar El Mehdi__________________
 
 ---
 
@@ -17,13 +17,13 @@ Donnez la syntaxe complète de `isset()`, expliquez quand elle retourne `TRUE` e
 
 _Votre réponse ici_
 
----
+Isset renvoi True lorsque le programme detecte que l'attribut passé en parametre a bien été cliqué/N'est pas vide (Exemple: un bouton avec l'attribut validé) et pour False c'est tout simplement l'inverse.
 
 ### b) La fonction `empty()` *(8 pts)*
 
 Donnez la syntaxe complète de `empty()`, expliquez quand elle retourne `TRUE` et quand elle retourne `FALSE`.
 
-_Votre réponse ici_
+la fonction Empty renvoi TRUE lorsque les champs d'un formulaire sont détecté comme vide et False lorsque c'est l'inverse.
 
 ---
 
@@ -31,7 +31,7 @@ _Votre réponse ici_
 
 Quelle est la différence entre `isset()` et `empty()` lorsqu'une variable vaut `0` ? Justifiez votre réponse.
 
-_Votre réponse ici_
+La difference est que isset renvera false car le programme interprete 0 comme un FALSE et empty renverra l'inverse car le programme voit ca comme un champ vide.
 
 ---
 
@@ -41,14 +41,14 @@ Complétez ce tableau (TRUE ou FALSE) :
 
 | Valeur de `$var` | `isset($var)` | `empty($var)` |
 |---|---|---|
-| `$var = 0;` | ? | ? |
-| `$var = "";` | ? | ? |
-| `$var = "bonjour";` | ? | ? |
-| Variable non déclarée | ? | ? |
-| `$var = "0";` | ? | ? |
-| `$var = null;` | ? | ? |
-| `$var = false;` | ? | ? |
-| `$var = [];` | ? | ? |
+| `$var = 0;` | FALSE | TRUE |
+| `$var = "";` | FALSE| TRUE |
+| `$var = "bonjour";` |TRUE | FALSE |
+| Variable non déclarée | FALSE| FALSE |
+| `$var = "0";` | TRUE| FALSE |
+| `$var = null;` | FALSE| FALSE |
+| `$var = false;` | TRUE| TRUE |
+| `$var = [];` | TRUE| TRUE |
 
 ---
 
@@ -60,7 +60,8 @@ Expliquez la différence entre la méthode `GET` et la méthode `POST` pour le p
 
 _Votre réponse ici_
 
----
+GET est utilisé pour la recherche sur une page car les elements seront affiché dans l'url, tandis qu'avec post on n'a pas ça, ce qui en fait une methode plus sécurisé.
+nombre de caracteres max pour get: ?
 
 ### b) Passage de paramètres dans l'URL *(15 pts)*
 
@@ -70,6 +71,7 @@ Montrez ensuite comment récupérer ces deux variables en PHP côté serveur.
 
 _Votre réponse ici_
 
+
 ---
 
 ### c) Les modes d'ouverture de `fopen()` *(20 pts)*
@@ -77,7 +79,11 @@ _Votre réponse ici_
 Citez et expliquez les **6 modes d'ouverture** possibles de la fonction `fopen()`. Pour chacun, précisez : lecture, écriture, ou les deux ; et où est placé le pointeur.
 
 _Votre réponse ici_
-
+r = lecture du ficher et le pointeur est au debut du fichier
+w = ecriture du ficher avec pointeur au debut du ficher
+a=ecriture avec le pointeur en fin de fichier 
+w+=pointeur au debut 
+a+=pointeur a la fin
 ---
 
 ### d) La fonction `header()` *(10 pts)*
@@ -86,6 +92,7 @@ _Votre réponse ici_
 
 _Votre réponse ici_
 
+Elle permet dans un script PHP de renvoyer vers une autre page
 ---
 
 ## 📊 Barème

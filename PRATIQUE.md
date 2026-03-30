@@ -6,8 +6,7 @@
 > Pour le code from scratch (Q2) : créez les fichiers PHP directement dans votre dossier.  
 > Écrivez votre nom et prénom ci-dessous.
 
-**Nom et prénom :** _______________________
-
+**Nom et prénom :** Essebbar El Mehdi
 ---
 
 ## Question 1 — Compléter du code PHP (40 points)
@@ -28,7 +27,6 @@ if(/* 1 */($_POST["envoyer"])) {
     if(/* 2 */($_POST["prenom"]) || empty($_POST["email"])) {
         $erreur = "Veuillez remplir tous les champs obligatoires.";
     } else {
-        // Nettoyage des données
         $prenom = /* 3 */("\\", "", $_POST["prenom"]);
         $email  = str_replace("\\", "", $_POST["email"]);
         $niveau = str_replace("\\", "", $_POST["niveau"]);
@@ -96,18 +94,18 @@ Remplacez chaque `?` par votre réponse :
 
 | N° | Votre réponse |
 |---|---|
-| 1 | ? |
-| 2 | ? |
-| 3 | ? |
-| 4 | ? |
-| 5 | ? |
-| 6 | ? |
-| 7 | ? |
-| 8 | ? |
-| 9 | ? |
-| 10 | ? |
-| 11 | ? |
-| 12 | ? |
+| 1 | Isset|
+| 2 | empty |
+| 3 | str_replace|
+| 4 | date(format) |
+| 5 | fopen |
+| 6 |  a|
+| 7 | fwrite|
+| 8 | close |
+| 9 | header|
+| 10 | !empty |
+| 11 | htmlentities |
+| 12 | "vous etes inscrits et votre niveau est avancé" |
 
 *(~3,5 pts par réponse correcte)*
 
