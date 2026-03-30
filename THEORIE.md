@@ -5,7 +5,7 @@
 > Répondez directement dans ce fichier en remplaçant les lignes `_Votre réponse ici_`.  
 > Écrivez votre nom et prénom ci-dessous.
 
-**Nom et prénom :** _______________________
+**Nom et prénom :** Mbengo Marc_______________________
 
 ---
 
@@ -16,14 +16,14 @@
 Donnez la syntaxe complète de `isset()`, expliquez quand elle retourne `TRUE` et quand elle retourne `FALSE`.
 
 _Votre réponse ici_
+isset() si la condition est rempli lors du isset alors True sera la réponse
 
----
 
 ### b) La fonction `empty()` *(8 pts)*
 
 Donnez la syntaxe complète de `empty()`, expliquez quand elle retourne `TRUE` et quand elle retourne `FALSE`.
 
-_Votre réponse ici_
+empty() elle retourne True pour tout ce qui est 0, null , vide  et chaine vide 
 
 ---
 
@@ -31,8 +31,7 @@ _Votre réponse ici_
 
 Quelle est la différence entre `isset()` et `empty()` lorsqu'une variable vaut `0` ? Justifiez votre réponse.
 
-_Votre réponse ici_
-
+Pour empty ce sera consideré comme True alors isset ce sera en fonction de la condition d'existence .
 ---
 
 ### d) Tableau comparatif *(16 pts)*
@@ -41,14 +40,14 @@ Complétez ce tableau (TRUE ou FALSE) :
 
 | Valeur de `$var` | `isset($var)` | `empty($var)` |
 |---|---|---|
-| `$var = 0;` | ? | ? |
-| `$var = "";` | ? | ? |
-| `$var = "bonjour";` | ? | ? |
-| Variable non déclarée | ? | ? |
-| `$var = "0";` | ? | ? |
-| `$var = null;` | ? | ? |
-| `$var = false;` | ? | ? |
-| `$var = [];` | ? | ? |
+| `$var = 0;` | True| True|
+| `$var = "";` | False | True |
+| `$var = "bonjour";` | True | False |
+| Variable non déclarée | False | True |
+| `$var = "0";` | True | False|
+| `$var = null;` | False | True |
+| `$var = false;` | True | true |
+| `$var = [];` | False | True |
 
 ---
 
@@ -60,7 +59,8 @@ Expliquez la différence entre la méthode `GET` et la méthode `POST` pour le p
 
 _Votre réponse ici_
 
----
+--la methode Get est utilisé pour récuperer de l'information alors que Post est utilisé pour envoyer de l'information .
+Exemple :Si l'on veut faire une une dans un moteur de recherche ,la méthode sera très probablement  un get  
 
 ### b) Passage de paramètres dans l'URL *(15 pts)*
 
@@ -68,23 +68,23 @@ Donnez la syntaxe permettant de passer les variables `categorie` (valeur : "php"
 
 Montrez ensuite comment récupérer ces deux variables en PHP côté serveur.
 
-_Votre réponse ici_
-
 ---
 
 ### c) Les modes d'ouverture de `fopen()` *(20 pts)*
 
 Citez et expliquez les **6 modes d'ouverture** possibles de la fonction `fopen()`. Pour chacun, précisez : lecture, écriture, ou les deux ; et où est placé le pointeur.
 
-_Votre réponse ici_
-
 ---
+1.fopen("mine .txt", "r"); cela permet la lecture dans un fichier
+2.fopen("mine.txt", "w"); cela permet l'écriture dans un fichier 
+3.fopen("mine.txt", "a"); cela permet d' ajouter  à la fin d'un  fichier
+fopen("test.txt", "r+");cela permet 
 
 ### d) La fonction `header()` *(10 pts)*
 
 À quoi sert la fonction `header()` ? Donnez un exemple concret. Quelle contrainte très importante doit-on respecter lors de son utilisation, et pourquoi ?
-
-_Votre réponse ici_
+La fonction header est utilisé au debut de la la page php.Elle permet de redirigé la page en http.
+Il faut un exit à la fin  du header pour ne pas créer des bugs  sinon la machine continu de tourner en boucle et causer  un crash 
 
 ---
 
