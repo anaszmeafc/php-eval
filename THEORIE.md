@@ -5,7 +5,7 @@
 > Répondez directement dans ce fichier en remplaçant les lignes `_Votre réponse ici_`.  
 > Écrivez votre nom et prénom ci-dessous.
 
-**Nom et prénom :** _______________________
+**Nom et prénom :** ____________________
 
 ---
 
