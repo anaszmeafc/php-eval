@@ -16,5 +16,24 @@ if(!file_exists($fichier_nom) || filesize($fichier_nom) == 0) {
     
        echo "<table>";
 
+    
+    while($ligne = fgets($fichier)) {
+
+        $infos = explode("|", $ligne);
+
+        echo "<tr>";
+        echo "<td>" . $infos[0] . "</td>";
+        echo "<td>" . $infos[1] . "</td>";
+        echo "<td>" . $infos[2] . "</td>";
+        echo "<td>" . $infos[3] . "</td>";
+        echo "</tr>";
+    }
+
+    echo "</table>";
+
+    fclose($fichier);
+}
+?>
+
 
 // Partie B
